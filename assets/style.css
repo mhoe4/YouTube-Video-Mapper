@@ -1,0 +1,26 @@
+html {
+	font-family: "Inconsolata", monospace;
+}
+
+
+#title {
+	text-align: center;
+}
+
+#myForm {
+	width: 100%;
+	text-align: center;
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+
+#go {
+	padding: 5px 10px;
+	background: white;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+#go:hover{
+	background: gray;
+}

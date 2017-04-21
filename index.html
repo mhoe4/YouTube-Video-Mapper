@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<h1 id="title">YouTube Search</h1>
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+		 * element that contains the map. */
+		#map {
+			height: 80%;
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+			height: 80%;
+			margin: 10px;
+			padding: 0;
+		}
+	</style>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script src="js/script.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzB-XZC1m9cIL2XP4iT3Awfp64Iu9V0CM&callback=initMap">
+  </script>
+</head>
+
+<body>
+
+	<form id="myForm">
+		<div>Keywords <input type="text" label="search" id="search"></div>
+		<div>Street Address <input type="text" label="streetAd" id="streetAd"></div>
+		<div>City <input type="text" label="city" id="city"></div>
+		<div>State <input type="text" label="state" id="state"></div>
+		<div>ZipCode <input type="text" label="zip" id="zip"></div>
+		<div>Radius <input type="text" label="locationRadius" id="locationRadius"></div>
+		<div><input type="submit" value="go"></div>
+	</form>
+
+	<div id="map"></div>
+</body>
+
+
+</html>
